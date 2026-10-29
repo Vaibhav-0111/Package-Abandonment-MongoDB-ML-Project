@@ -1,0 +1,286 @@
+{
+  "crud_demo": {
+    "read_one": {
+      "_id": "demo:pkg-a",
+      "ecosystem": "pypi",
+      "n_releases": 12
+    },
+    "read_filtered": [
+      "demo:pkg-a",
+      "demo:pkg-b"
+    ],
+    "updated": 1,
+    "deleted": 1,
+    "remaining": 2
+  },
+  "indexes": [
+    "_id_",
+    "ecosystem_1_name_1",
+    "last_release_-1",
+    "n_releases_1"
+  ],
+  "counts": {
+    "raw": 9238,
+    "clean": 9238,
+    "quarantine": 0
+  },
+  "by_ecosystem": [
+    {
+      "_id": "npm",
+      "packages": 2505,
+      "avg_releases": 90.51936127744511,
+      "max_releases": 9148
+    },
+    {
+      "_id": "pypi",
+      "packages": 6733,
+      "avg_releases": 10.689440071290658,
+      "max_releases": 1132
+    }
+  ],
+  "single_release_packages": 2443,
+  "stale_since_2024": 4749,
+  "packages_over_100_releases": 421,
+  "unwind_max_releases": 150,
+  "packages_excluded_from_unwind": 277,
+  "releases_per_year": [
+    {
+      "year": 2005,
+      "ecosystem": "pypi",
+      "releases": 3
+    },
+    {
+      "year": 2006,
+      "ecosystem": "pypi",
+      "releases": 6
+    },
+    {
+      "year": 2007,
+      "ecosystem": "pypi",
+      "releases": 14
+    },
+    {
+      "year": 2008,
+      "ecosystem": "pypi",
+      "releases": 68
+    },
+    {
+      "year": 2009,
+      "ecosystem": "pypi",
+      "releases": 51
+    },
+    {
+      "year": 2010,
+      "ecosystem": "npm",
+      "releases": 8
+    },
+    {
+      "year": 2010,
+      "ecosystem": "pypi",
+      "releases": 90
+    },
+    {
+      "year": 2011,
+      "ecosystem": "npm",
+      "releases": 256
+    },
+    {
+      "year": 2011,
+      "ecosystem": "pypi",
+      "releases": 166
+    },
+    {
+      "year": 2012,
+      "ecosystem": "npm",
+      "releases": 372
+    },
+    {
+      "year": 2012,
+      "ecosystem": "pypi",
+      "releases": 376
+    },
+    {
+      "year": 2013,
+      "ecosystem": "npm",
+      "releases": 674
+    },
+    {
+      "year": 2013,
+      "ecosystem": "pypi",
+      "releases": 501
+    },
+    {
+      "year": 2014,
+      "ecosystem": "npm",
+      "releases": 1426
+    },
+    {
+      "year": 2014,
+      "ecosystem": "pypi",
+      "releases": 926
+    },
+    {
+      "year": 2015,
+      "ecosystem": "npm",
+      "releases": 2092
+    },
+    {
+      "year": 2015,
+      "ecosystem": "pypi",
+      "releases": 986
+    },
+    {
+      "year": 2016,
+      "ecosystem": "npm",
+      "releases": 2599
+    },
+    {
+      "year": 2016,
+      "ecosystem": "pypi",
+      "releases": 958
+    },
+    {
+      "year": 2017,
+      "ecosystem": "npm",
+      "releases": 3398
+    },
+    {
+      "year": 2017,
+      "ecosystem": "pypi",
+      "releases": 1366
+    },
+    {
+      "year": 2018,
+      "ecosystem": "npm",
+      "releases": 3550
+    },
+    {
+      "year": 2018,
+      "ecosystem": "pypi",
+      "releases": 1887
+    },
+    {
+      "year": 2019,
+      "ecosystem": "npm",
+      "releases": 3700
+    },
+    {
+      "year": 2019,
+      "ecosystem": "pypi",
+      "releases": 2707
+    },
+    {
+      "year": 2020,
+      "ecosystem": "npm",
+      "releases": 3524
+    },
+    {
+      "year": 2020,
+      "ecosystem": "pypi",
+      "releases": 3754
+    },
+    {
+      "year": 2021,
+      "ecosystem": "npm",
+      "releases": 3643
+    },
+    {
+      "year": 2021,
+      "ecosystem": "pypi",
+      "releases": 4269
+    },
+    {
+      "year": 2022,
+      "ecosystem": "npm",
+      "releases": 3944
+    },
+    {
+      "year": 2022,
+      "ecosystem": "pypi",
+      "releases": 4346
+    },
+    {
+      "year": 2023,
+      "ecosystem": "npm",
+      "releases": 4424
+    },
+    {
+      "year": 2023,
+      "ecosystem": "pypi",
+      "releases": 5934
+    },
+    {
+      "year": 2024,
+      "ecosystem": "npm",
+      "releases": 4338
+    },
+    {
+      "year": 2024,
+      "ecosystem": "pypi",
+      "releases": 6715
+    },
+    {
+      "year": 2025,
+      "ecosystem": "npm",
+      "releases": 4732
+    },
+    {
+      "year": 2025,
+      "ecosystem": "pypi",
+      "releases": 7856
+    },
+    {
+      "year": 2026,
+      "ecosystem": "npm",
+      "releases": 9110
+    },
+    {
+      "year": 2026,
+      "ecosystem": "pypi",
+      "releases": 14086
+    }
+  ],
+  "inactive_over_2y_by_ecosystem": [
+    {
+      "_id": "npm",
+      "packages": 1296
+    },
+    {
+      "_id": "pypi",
+      "packages": 3453
+    }
+  ],
+  "top5_by_releases": [
+    {
+      "_id": "npm:@prisma/language-server",
+      "n_releases": 9148
+    },
+    {
+      "_id": "npm:@clerk/express",
+      "n_releases": 4942
+    },
+    {
+      "_id": "npm:graphql-yoga",
+      "n_releases": 4531
+    },
+    {
+      "_id": "npm:@graphql-yoga/render-graphiql",
+      "n_releases": 4285
+    },
+    {
+      "_id": "npm:@graphql-yoga/plugin-response-cache",
+      "n_releases": 4043
+    }
+  ],
+  "cleaning_log": {
+    "raw_packages": 9238,
+    "raw_releases": 298821,
+    "unparseable_dates": 98,
+    "dates_out_of_range": 0,
+    "duplicate_versions": 0,
+    "clean_packages": 9238,
+    "quarantined_packages": 0,
+    "collected_at": "2026-10-17T16:57:41.728551+00:00",
+    "single_release_packages": 2443
+  }
+}

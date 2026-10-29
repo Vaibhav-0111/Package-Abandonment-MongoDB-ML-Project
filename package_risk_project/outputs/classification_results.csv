@@ -1,0 +1,5 @@
+task,model,baseline,accuracy,precision,recall,f1,tn,fp,fn,tp,roc_auc,cv_f1_mean
+classification,Baseline: no release in last 12 months,True,0.7045,0.7525,0.5296,0.6217,289,50,135,152,,
+classification,Logistic Regression,False,0.7412,0.7273,0.6969,0.7117,264,75,87,200,0.8343,0.7356
+classification,Decision Tree,False,0.73,0.7034,0.7108,0.7071,253,86,83,204,0.8154,0.7289
+classification,Random Forest,False,0.7428,0.7143,0.7317,0.7229,255,84,77,210,0.8437,0.7402

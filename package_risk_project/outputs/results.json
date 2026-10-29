@@ -1,0 +1,267 @@
+{
+  "top_features": {
+    "classification": {
+      "since_last_days": 0.1602,
+      "active_months_24m": 0.088,
+      "n_180d": 0.0854,
+      "overdue_ratio": 0.0806,
+      "n_365d": 0.0652
+    },
+    "regression": {
+      "n_180d": 0.3532,
+      "n_90d": 0.2269,
+      "active_months_24m": 0.0772,
+      "since_last_days": 0.0458,
+      "n_365d": 0.0423
+    }
+  },
+  "lr_top_coefficients": {
+    "active_months_24m": -1.0,
+    "n_releases": -0.821,
+    "overdue_ratio": 0.735,
+    "releases_per_year_life": 0.575,
+    "n_730d": 0.51,
+    "is_npm": -0.345
+  },
+  "classification": [
+    {
+      "task": "classification",
+      "model": "Baseline: no release in last 12 months",
+      "baseline": true,
+      "accuracy": 0.7044728434504792,
+      "precision": 0.7524752475247525,
+      "recall": 0.5296167247386759,
+      "f1": 0.621676891615542,
+      "tn": 289,
+      "fp": 50,
+      "fn": 135,
+      "tp": 152
+    },
+    {
+      "task": "classification",
+      "model": "Logistic Regression",
+      "baseline": false,
+      "accuracy": 0.7412140575079872,
+      "precision": 0.7272727272727273,
+      "recall": 0.6968641114982579,
+      "f1": 0.7117437722419929,
+      "tn": 264,
+      "fp": 75,
+      "fn": 87,
+      "tp": 200,
+      "roc_auc": 0.834284069768637,
+      "cv_f1_mean": 0.7356188006889421,
+      "best_params": {
+        "C": 1
+      }
+    },
+    {
+      "task": "classification",
+      "model": "Decision Tree",
+      "baseline": false,
+      "accuracy": 0.7300319488817891,
+      "precision": 0.7034482758620689,
+      "recall": 0.710801393728223,
+      "f1": 0.707105719237435,
+      "tn": 253,
+      "fp": 86,
+      "fn": 83,
+      "tp": 204,
+      "roc_auc": 0.8154080971909593,
+      "cv_f1_mean": 0.7289044964183276,
+      "best_params": {
+        "max_depth": 4,
+        "min_samples_leaf": 40
+      }
+    },
+    {
+      "task": "classification",
+      "model": "Random Forest",
+      "baseline": false,
+      "accuracy": 0.7428115015974441,
+      "precision": 0.7142857142857143,
+      "recall": 0.7317073170731707,
+      "f1": 0.7228915662650602,
+      "tn": 255,
+      "fp": 84,
+      "fn": 77,
+      "tp": 210,
+      "roc_auc": 0.8436680953408776,
+      "cv_f1_mean": 0.7401768384404006,
+      "best_params": {
+        "max_depth": 8,
+        "min_samples_leaf": 5,
+        "n_estimators": 300
+      }
+    }
+  ],
+  "regression": [
+    {
+      "task": "regression",
+      "model": "Baseline: releases in last 24 months",
+      "baseline": true,
+      "r2": 0.4209987563716544,
+      "mae": 6.515974440894569,
+      "rmse": 11.207240357096177
+    },
+    {
+      "task": "regression",
+      "model": "Linear Regression",
+      "baseline": false,
+      "r2": 0.7049710317814453,
+      "mae": 4.6751127310850356,
+      "rmse": 8.000023599356478,
+      "cv_r2_mean": 0.6615522983160197,
+      "best_params": {}
+    },
+    {
+      "task": "regression",
+      "model": "Decision Tree",
+      "baseline": false,
+      "r2": 0.6816227016288092,
+      "mae": 4.399295444806975,
+      "rmse": 8.3105541663746,
+      "cv_r2_mean": 0.6422290458551828,
+      "best_params": {
+        "max_depth": 5,
+        "min_samples_leaf": 20
+      }
+    },
+    {
+      "task": "regression",
+      "model": "Random Forest",
+      "baseline": false,
+      "r2": 0.7361580230597243,
+      "mae": 4.157756101090365,
+      "rmse": 7.565382388543307,
+      "cv_r2_mean": 0.7235859246471604,
+      "best_params": {
+        "max_depth": null,
+        "min_samples_leaf": 2,
+        "n_estimators": 300
+      }
+    }
+  ],
+  "best_classifier": "Random Forest",
+  "best_regressor": "Random Forest",
+  "by_ecosystem_test": {
+    "npm": {
+      "rows": 249,
+      "abandoned_pct": 26.5,
+      "best_model_f1": 0.5866666666666667,
+      "best_model_accuracy": 0.751004016064257,
+      "baseline_f1": 0.56,
+      "baseline_accuracy": 0.7791164658634538
+    },
+    "pypi": {
+      "rows": 377,
+      "abandoned_pct": 58.6,
+      "best_model_f1": 0.7703016241299304,
+      "best_model_accuracy": 0.7374005305039788,
+      "baseline_f1": 0.6428571428571429,
+      "baseline_accuracy": 0.6551724137931034
+    }
+  },
+  "risk_bands": {
+    "low": 1096,
+    "high": 932,
+    "medium": 770
+  },
+  "risk_bands_by_ecosystem": {
+    "npm": {
+      "high": 94,
+      "low": 586,
+      "medium": 294
+    },
+    "pypi": {
+      "high": 838,
+      "low": 510,
+      "medium": 476
+    }
+  },
+  "example_explanation": {
+    "risk": 0.9867,
+    "ecosystem": "pypi",
+    "reasons": [
+      {
+        "factor": "time since last release vs usual gap",
+        "value": 538.0,
+        "effect": "raises risk",
+        "weight": 1.364
+      },
+      {
+        "factor": "active months in last 24",
+        "value": 1.0,
+        "effect": "raises risk",
+        "weight": 1.151
+      },
+      {
+        "factor": "total releases",
+        "value": 2.0,
+        "effect": "raises risk",
+        "weight": 1.143
+      }
+    ]
+  },
+  "prediction_docs_stored": 1252,
+  "preprocessing": {
+    "feature_rows": 5721,
+    "n_features": 22,
+    "features": [
+      "age_days",
+      "n_releases",
+      "since_last_days",
+      "n_90d",
+      "n_180d",
+      "n_365d",
+      "n_730d",
+      "trend_ratio",
+      "active_months_24m",
+      "mean_gap",
+      "median_gap",
+      "std_gap",
+      "max_gap",
+      "last_gap",
+      "overdue_ratio",
+      "overdue_ratio_recent",
+      "prerelease_share_recent",
+      "major_version",
+      "n_major_versions",
+      "releases_per_year_life",
+      "is_stable",
+      "is_npm"
+    ],
+    "train_rows": 2297,
+    "train_packages": 1464,
+    "test_rows": 626,
+    "test_packages": 626,
+    "current_rows": 2798,
+    "train_snapshots": [
+      "2021-10-17",
+      "2022-10-17"
+    ],
+    "test_snapshot": "2024-10-17",
+    "abandoned_pct_train": 42.7,
+    "abandoned_pct_test": 45.8,
+    "abandoned_test_count": 287,
+    "abandoned_pct_by_ecosystem_test": {
+      "npm": 26.5,
+      "pypi": 58.6
+    },
+    "abandoned_pct_by_ecosystem_train": {
+      "npm": 26.1,
+      "pypi": 56.8
+    },
+    "rows_by_ecosystem_train": {
+      "pypi": 1243,
+      "npm": 1054
+    },
+    "rows_by_ecosystem_test": {
+      "pypi": 377,
+      "npm": 249
+    },
+    "releases_next_mean_test": 7.72,
+    "releases_next_std_test": 14.74,
+    "capped_share_train_pct": 6.57
+  }
+}

@@ -1,0 +1,10 @@
+Best model: Random Forest
+
+              precision    recall  f1-score   support
+
+still active       0.77      0.75      0.76       339
+   abandoned       0.71      0.73      0.72       287
+
+    accuracy                           0.74       626
+   macro avg       0.74      0.74      0.74       626
+weighted avg       0.74      0.74      0.74       626

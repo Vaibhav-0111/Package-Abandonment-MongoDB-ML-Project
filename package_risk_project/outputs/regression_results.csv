@@ -1,0 +1,5 @@
+task,model,baseline,r2,mae,rmse,cv_r2_mean
+regression,Baseline: releases in last 24 months,True,0.421,6.516,11.2072,
+regression,Linear Regression,False,0.705,4.6751,8.0,0.6616
+regression,Decision Tree,False,0.6816,4.3993,8.3106,0.6422
+regression,Random Forest,False,0.7362,4.1578,7.5654,0.7236
